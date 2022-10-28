@@ -1,6 +1,7 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import About from './components/About.svelte';
 </script>
 
 <main>
@@ -13,7 +14,7 @@
     </a>
   </div>
   <h1>Vite + Svelte</h1>
-  <p>Aqui estoy moviendole a esta vaina de svelte</p>
+  <About />
 
   <div class="card">
     <Counter />
