@@ -1,5 +1,5 @@
 <script>
-    import Button from './Button.svelte'
+    import Button from './Button.svelte';
     let someText = `Frontend de peso!`;
     let count = 0;
     let styles = {darkMode : false}

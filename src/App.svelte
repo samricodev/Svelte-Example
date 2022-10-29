@@ -1,9 +1,11 @@
 <script>
-  import About from './components/About.svelte'
-  import Text from './components/Text.svelte'
-  import Person from './components/Person.svelte'
-  import Skills from './components/Skills.svelte'
-  import Input from './components/Input.svelte'
+  import About from './components/About.svelte';
+  import Text from './components/Text.svelte';
+  import Person from './components/Person.svelte';
+  import Skills from './components/Skills.svelte';
+  import Input from './components/Input.svelte';
+  import Photos from './components/Photos.svelte';
+  import ButtonCount from './components/ButtonCount.svelte';
 
   const data = {
     name: "Sam",
@@ -21,6 +23,8 @@
   <Person {...data}/>
   <Skills />
   <Input />
+  <ButtonCount />
+  <Photos />
 </main>
 
 <style>
