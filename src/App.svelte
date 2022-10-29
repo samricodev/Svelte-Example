@@ -1,47 +1,40 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
-  import About from './components/About.svelte';
+  import About from './components/About.svelte'
+  import Text from './components/Text.svelte'
+  import Person from './components/Person.svelte'
+
+  const data = {
+    name: "Sam",
+    lastName: "Rico",
+    age: 20
+  }
+
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+  <h1>Mi primer sitio con Svelte</h1>
   <About />
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <Text anotherText="Hola hdtpm"/>
+  <Text />
+  <Person {...data}/>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
+  :global(body){
+    background-color: #f2eee2;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  :global(:root){
+    --theme-color: purple;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+
+  :global(body.darkMode){
+    background-color: #1d3040;
+    color: #bfc2c7;
   }
-  .read-the-docs {
-    color: #888;
+
+  h1{
+    text-align: center;
   }
+
 </style>
