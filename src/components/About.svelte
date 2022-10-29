@@ -23,11 +23,11 @@
 
 <div class="About">
     {#if !styles.darkMode}
-        <p>{someText}</p>
-    {:else}
         <p>
             <span>Hello DarkMode</span>
         </p>
+    {:else}
+        <p>{someText}</p>
     {/if}
     <button on:click={incrementCount}>
         Click {count} {count == 1 ? "time": "times"}

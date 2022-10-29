@@ -2,6 +2,7 @@
   import About from './components/About.svelte'
   import Text from './components/Text.svelte'
   import Person from './components/Person.svelte'
+  import Skills from './components/Skills.svelte'
 
   const data = {
     name: "Sam",
@@ -17,6 +18,7 @@
   <Text anotherText="Hola hdtpm"/>
   <Text />
   <Person {...data}/>
+  <Skills />
 </main>
 
 <style>
