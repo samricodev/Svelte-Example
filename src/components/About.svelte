@@ -1,4 +1,5 @@
 <script>
+    import Button from './Button.svelte'
     let someText = `Frontend de peso!`;
     let count = 0;
     let styles = {darkMode : false}
@@ -29,6 +30,8 @@
     {:else}
         <p>{someText}</p>
     {/if}
+    <Button {count} text="Click" on:click={incrementCount} />
+    <Button text="DarkMode" on:click={toggle} />
     <button on:click={incrementCount}>
         Click {count} {count == 1 ? "time": "times"}
     </button>
